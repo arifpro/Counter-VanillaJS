@@ -16,5 +16,7 @@ btns.forEach(btn => btn.addEventListener('click', e => {
         count = 0
     }
 
+    value.style.color = count > 0 ? 'green' : (count < 0 ? 'red' : 'black')
+
     value.textContent = count
 }))
